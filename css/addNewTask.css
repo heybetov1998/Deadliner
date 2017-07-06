@@ -1,0 +1,72 @@
+.contentArea .row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 15px; }
+  .contentArea .row .rightCol .boxContent {
+    border-top: 1px solid #f4f4f4; }
+  .contentArea .row .box {
+    border-top: 3px solid #3c8dbc;
+    border-radius: 3px; }
+    .contentArea .row .box .contentWrapper {
+      margin: 0 auto;
+      width: 97.3%; }
+    .contentArea .row .box .boxHeader {
+      padding: 10px;
+      padding-bottom: 12px;
+      background: white;
+      border-bottom: 1px solid #f4f4f4; }
+      .contentArea .row .box .boxHeader h3 {
+        color: #444;
+        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1;
+        float: left; }
+    .contentArea .row .box .boxContent {
+      background: white; }
+      .contentArea .row .box .boxContent .part {
+        margin-bottom: 5px;
+        padding-top: 10px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333; }
+        .contentArea .row .box .boxContent .part h5 {
+          margin-bottom: 5px; }
+        .contentArea .row .box .boxContent .part input {
+          border: 1px solid #d2d6de;
+          padding: 6px 12px;
+          width: 100%; }
+        .contentArea .row .box .boxContent .part input::-webkit-input-placeholder {
+          font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .contentArea .row .box .boxContent .part textarea {
+          border: 1px solid #d2d6de;
+          padding: 6px 12px;
+          height: 74px;
+          width: 100%; }
+        .contentArea .row .box .boxContent .part textarea::-webkit-input-placeholder {
+          font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .contentArea .row .box .boxContent .part select {
+          border: 1px solid #d2d6de;
+          padding: 6px 12px;
+          width: 100%; }
+          .contentArea .row .box .boxContent .part select option {
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #555; }
+      .contentArea .row .box .boxContent button {
+        background: #3c8dbc;
+        border-radius: 3px;
+        border: 1px solid #367fa9;
+        color: white;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.42857143;
+        float: right;
+        margin: 10px; }
+      .contentArea .row .box .boxContent .tc {
+        margin-bottom: 0px; }
+
+/*# sourceMappingURL=addnewtask.css.map */
