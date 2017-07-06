@@ -81,7 +81,8 @@ body {
         body #nav #navigations li > a:visited {
           text-decoration: none; }
       body #nav #navigations li > ul {
-        display: none; }
+        display: none;
+        transition: transform .3s ease-in-out, width .3s ease-in-out; }
         body #nav #navigations li > ul li a {
           color: #8aa4af;
           padding: 5px 5px 5px 15px;
