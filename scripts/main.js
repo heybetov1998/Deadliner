@@ -125,6 +125,9 @@ function hideMinimizedSettings() {
 var isOpen = false;
 var isMinimized = false;
 var taskManager = $('#taskManager');
+var taskManagerHead=$('#taskManager>a');
+var userManagerHead=$('#userManager>a');
+var settingsHead=$('#settings>a');
 var taskManagerItem = $('#taskManager ul');
 var userManager = $('#userManager');
 var userManagerItem = $('#userManager ul');
@@ -154,9 +157,9 @@ var minimizedSettings = $('#minimizedSettings');
 // E V E N T S   S T A R T
 // =======================
 
-taskManager.click(closeTaskManager);
-userManager.click(closeUserManager);
-settings.click(closeSettings);
+taskManagerHead.click(closeTaskManager);
+userManagerHead.click(closeUserManager);
+settingsHead.click(closeSettings);
 bars.click(minimizeNav);
 dashboard.mouseover(showMinimizedDashboard);
 dashboard.mouseout(hideMinimizedDashboard);
