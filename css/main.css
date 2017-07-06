@@ -18,9 +18,10 @@
   width: 96.31%; }
 
 body {
-  margin: 0; }
+  height: 100%;
+  margin: 0;
+  background: #222d32; }
   body #nav {
-    height: 100vh;
     background: #222d32;
     padding: 0;
     position: relative;
@@ -34,6 +35,7 @@ body {
         background: #367FA9;
         cursor: pointer; }
       body #nav #logo #logoName {
+        text-decoration: none;
         outline: 0;
         color: white;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -54,7 +56,6 @@ body {
       body #nav #navName #name {
         color: #4b646f; }
     body #nav #navigations {
-      z-index: 2;
       margin-top: -1px; }
       body #nav #navigations li:first-child i {
         margin-right: 6px; }
@@ -145,10 +146,9 @@ body {
       top: 132px; }
   body #content {
     position: relative;
-    height: 100vh;
     padding: 0;
     background: #ECF0F5;
-    z-index: 0;
+    min-height: 100vh;
     transition: transform .3s ease-in-out, width .3s ease-in-out; }
     body #content #topPanel {
       z-index: 5;
@@ -226,6 +226,8 @@ body {
           body #content .contentHeadline .right ul .after span:first-child {
             padding-right: 5px;
             color: #ccc; }
+    body #content .contentArea {
+      margin-bottom: 51px; }
     body #content #footer {
       text-align: right;
       color: #444;
