@@ -3,38 +3,47 @@
 // =============================
 
 function closeTaskManager() {
-    if (!isOpen) {
-        taskManagerItem.css("display", "block");
-        userManagerItem.css("display", "none");
-        settingsItem.css("display", "none");
-        isOpen = true;
+    if (nav.hasClass('minimizedLeft')) {
+        navigations.off('click', taskManager, flash);
     } else {
-        taskManagerItem.css("display", "none");
-        isOpen = false;
+        if (!isOpen) {
+            taskManagerItem.css("display", "block");
+            taskManager.siblings().children('ul').css('display', 'none');
+            isOpen = true;
+        } else {
+            taskManagerItem.css("display", "none");
+            isOpen = false;
+        }
     }
 }
 
 function closeUserManager() {
-    if (!isOpen) {
-        taskManagerItem.css("display", "none");
-        userManagerItem.css("display", "block");
-        settingsItem.css("display", "none");
-        isOpen = true;
+    if (nav.hasClass('minimizedLeft')) {
+        navigations.off('click', userManager, flash);
     } else {
-        userManagerItem.css("display", "none");
-        isOpen = false;
+        if (!isOpen) {
+            userManagerItem.css("display", "block");
+            userManager.siblings().children('ul').css('display', 'none');
+            isOpen = true;
+        } else {
+            userManagerItem.css("display", "none");
+            isOpen = false;
+        }
     }
 }
 
 function closeSettings() {
-    if (!isOpen) {
-        taskManagerItem.css("display", "none");
-        userManagerItem.css("display", "none");
-        settingsItem.css("display", "block");
-        isOpen = true;
+    if (nav.hasClass('minimizedLeft')) {
+        navigations.off('click', settings, flash);
     } else {
-        settingsItem.css("display", "none");
-        isOpen = false;
+        if (!isOpen) {
+            settings.siblings().children('ul').css('display', 'none');
+            settingsItem.css("display", "block");
+            isOpen = true;
+        } else {
+            settingsItem.css("display", "none");
+            isOpen = false;
+        }
     }
 }
 
@@ -49,6 +58,7 @@ function minimizeNav() {
         listName.css('display', 'none');
         angle.css('display', 'none');
         navigations.css('margin-top', '0px');
+        navigations.children().children('ul').css('display', 'none');
         isMinimized = true;
     } else {
         nav.removeClass("minimizedLeft").addClass("coLeft");
