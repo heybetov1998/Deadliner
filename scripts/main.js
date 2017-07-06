@@ -125,9 +125,9 @@ function hideMinimizedSettings() {
 var isOpen = false;
 var isMinimized = false;
 var taskManager = $('#taskManager');
-var taskManagerHead=$('#taskManager>a');
-var userManagerHead=$('#userManager>a');
-var settingsHead=$('#settings>a');
+var taskManagerHead = $('#taskManager>a');
+var userManagerHead = $('#userManager>a');
+var settingsHead = $('#settings>a');
 var taskManagerItem = $('#taskManager ul');
 var userManager = $('#userManager');
 var userManagerItem = $('#userManager ul');

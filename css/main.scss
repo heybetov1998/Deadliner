@@ -23,9 +23,10 @@
 }
 
 body {
+    height: 100%;
     margin: 0;
+    background: #222d32;
     #nav {
-        height: 100vh;
         background: #222d32;
         padding: 0;
         position: relative;
@@ -44,6 +45,7 @@ body {
                     text-decoration: none;
                     outline: 0;
                 }
+                text-decoration: none;
                 outline: 0;
                 color: white;
                 font-family: "Helvetica Neue",
@@ -69,7 +71,6 @@ body {
             }
         }
         #navigations {
-            z-index: 2;
             margin-top: -1px;
             li {
                 &:first-child {
@@ -206,10 +207,9 @@ body {
     }
     #content {
         position: relative;
-        height: 100vh;
         padding: 0;
         background: #ECF0F5;
-        z-index: 0;
+        min-height: 100vh;
         transition: transform .3s ease-in-out, width .3s ease-in-out;
         #topPanel {
             z-index: 5;
@@ -317,6 +317,9 @@ body {
                     }
                 }
             }
+        }
+        .contentArea {
+            margin-bottom: 51px;
         }
         #footer {
             text-align: right;
