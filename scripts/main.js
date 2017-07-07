@@ -6,13 +6,15 @@ function closeTaskManager() {
     if (nav.hasClass('minimizedLeft')) {
         navigations.off('click', taskManager, flash);
     } else {
-        if (!isOpen) {
-            taskManagerItem.css("display", "block");
-            taskManager.siblings().children('ul').css('display', 'none');
-            isOpen = true;
+        if (!tm) {
+            taskManagerItem.slideDown();
+            taskManager.siblings().children('ul').slideUp();
+            tm = true;
+            um = false;
+            st = false;
         } else {
-            taskManagerItem.css("display", "none");
-            isOpen = false;
+            taskManagerItem.slideUp();
+            tm = false;
         }
     }
 }
@@ -21,13 +23,15 @@ function closeUserManager() {
     if (nav.hasClass('minimizedLeft')) {
         navigations.off('click', userManager, flash);
     } else {
-        if (!isOpen) {
-            userManagerItem.css("display", "block");
-            userManager.siblings().children('ul').css('display', 'none');
-            isOpen = true;
+        if (!um) {
+            userManagerItem.slideDown();
+            userManager.siblings().children('ul').slideUp();
+            um = true;
+            st = false;
+            tm = false;
         } else {
-            userManagerItem.css("display", "none");
-            isOpen = false;
+            userManagerItem.slideUp();
+            um = false;
         }
     }
 }
@@ -36,13 +40,15 @@ function closeSettings() {
     if (nav.hasClass('minimizedLeft')) {
         navigations.off('click', settings, flash);
     } else {
-        if (!isOpen) {
-            settings.siblings().children('ul').css('display', 'none');
-            settingsItem.css("display", "block");
-            isOpen = true;
+        if (!st) {
+            settings.siblings().children('ul').slideUp();
+            settingsItem.slideDown();
+            st = true;
+            um = false;
+            tm = false;
         } else {
-            settingsItem.css("display", "none");
-            isOpen = false;
+            settingsItem.slideUp();
+            st = false;
         }
     }
 }
@@ -123,6 +129,9 @@ function hideMinimizedSettings() {
 // =============================
 
 var isOpen = false;
+var tm = false;
+var us = false;
+var st = false;
 var isMinimized = false;
 var taskManager = $('#taskManager');
 var taskManagerHead = $('#taskManager>a');
