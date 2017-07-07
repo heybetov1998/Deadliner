@@ -25,7 +25,8 @@
           line-height: 1;
           float: left; }
       .contentArea .row .box .boxContent {
-        background: white; }
+        background: white;
+        padding-bottom: 10px; }
         .contentArea .row .box .boxContent .part {
           margin-bottom: 5px;
           padding-top: 10px;
@@ -56,6 +57,72 @@
             .contentArea .row .box .boxContent .part select option {
               font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
               color: #555; }
+        .contentArea .row .box .boxContent .partTwo {
+          margin-bottom: 5px;
+          padding-top: 10px;
+          font-weight: 700;
+          font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.42857143;
+          color: #333; }
+          .contentArea .row .box .boxContent .partTwo .row {
+            padding: 0; }
+            .contentArea .row .box .boxContent .partTwo .row .deadlineDate {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-left: 0; }
+              .contentArea .row .box .boxContent .partTwo .row .deadlineDate .inLeft {
+                color: #555;
+                border: 1px solid #d2d6de;
+                padding: 6px 12px;
+                border-right: 0; }
+              .contentArea .row .box .boxContent .partTwo .row .deadlineDate .inRight {
+                width: 100%; }
+            .contentArea .row .box .boxContent .partTwo .row .deadlineTime {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-right: 0; }
+              .contentArea .row .box .boxContent .partTwo .row .deadlineTime .inRight {
+                color: #555;
+                border: 1px solid #d2d6de;
+                padding: 6px 12px;
+                border-left: 0; }
+              .contentArea .row .box .boxContent .partTwo .row .deadlineTime .inLeft {
+                width: 100%; }
+          .contentArea .row .box .boxContent .partTwo .taskDeadline {
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; }
+            .contentArea .row .box .boxContent .partTwo .taskDeadline .left {
+              width: 100%; }
+            .contentArea .row .box .boxContent .partTwo .taskDeadline .right .timeButton {
+              background: #f4f4f4;
+              color: #444;
+              border: 1px solid #ddd;
+              border-radius: 3px;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin: 0;
+              margin-left: -1px;
+              border-bottom-left-radius: 0;
+              border-top-left-radius: 0; }
+              .contentArea .row .box .boxContent .partTwo .taskDeadline .right .timeButton span {
+                margin-right: 8px; }
+          .contentArea .row .box .boxContent .partTwo h5 {
+            margin-bottom: 5px; }
+          .contentArea .row .box .boxContent .partTwo input {
+            border: 1px solid #d2d6de;
+            padding: 6px 12px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 400;
+            color: #555;
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+          .contentArea .row .box .boxContent .partTwo input::-webkit-input-placeholder {
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
         .contentArea .row .box .boxContent button {
           background: #3c8dbc;
           border-radius: 3px;

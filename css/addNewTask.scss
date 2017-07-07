@@ -4,12 +4,10 @@
         margin-left: 0px;
         margin-right: 0px;
         padding-top: 15px;
-        .rightCol{
-        	.boxHeader{
-        	}
-        	.boxContent{
-        		border-top:1px solid #f4f4f4;
-        	}
+        .rightCol {
+            .boxContent {
+                border-top: 1px solid #f4f4f4;
+            }
         }
         .box {
             border-top: 3px solid #3c8dbc;
@@ -34,6 +32,7 @@
             }
             .boxContent {
                 background: white;
+                padding-bottom: 10px;
                 .part {
                     margin-bottom: 5px;
                     padding-top: 10px;
@@ -72,18 +71,102 @@
                         }
                     }
                 }
-                button{
-                	background: #3c8dbc;
-                	border-radius: 3px;
-                	border:1px solid #367fa9;
-                	color: white;
-                	padding: 6px 12px;
-                	font-size: 14px;
-                	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                	font-weight: 400;
-                	line-height: 1.42857143;
-                	float: right;
-                	margin: 10px;
+                .partTwo {
+                    margin-bottom: 5px;
+                    padding-top: 10px;
+                    font-weight: 700;
+                    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    font-size: 14px;
+                    line-height: 1.42857143;
+                    color: #333;
+                    .row {
+                        padding: 0;
+                        .deadlineDate {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            padding-left: 0;
+                            .inLeft {
+                                color: #555;
+                                border: 1px solid #d2d6de;
+                                padding: 6px 12px;
+                                border-right: 0;
+                            }
+                            .inRight {
+                                width: 100%;
+                            }
+                        }
+                        .deadlineTime {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            padding-right: 0;
+                            .inRight {
+                                color: #555;
+                                border: 1px solid #d2d6de;
+                                padding: 6px 12px;
+                                border-left: 0;
+                            }
+                            .inLeft {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .taskDeadline {
+                        padding: 0;
+                        display: flex;
+                        justify-content:flex-start;
+
+                        .left {
+                            width: 100%;
+                        }
+                        .right{
+                            .timeButton{
+                                background: #f4f4f4;
+                                color: #444;
+                                border:1px solid #ddd;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items:center;
+                                margin: 0;
+                                margin-left: -1px;
+                                border-bottom-left-radius: 0;
+                                border-top-left-radius: 0;
+                                span{
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                    h5 {
+                        margin-bottom: 5px;
+                    }
+                    input {
+                        border: 1px solid #d2d6de;
+                        padding: 6px 12px;
+                        width: 100%;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #555;
+                        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    }
+                    input::-webkit-input-placeholder {
+                        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    }
+                }
+                button {
+                    background: #3c8dbc;
+                    border-radius: 3px;
+                    border: 1px solid #367fa9;
+                    color: white;
+                    padding: 6px 12px;
+                    font-size: 14px;
+                    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    font-weight: 400;
+                    line-height: 1.42857143;
+                    float: right;
+                    margin: 10px;
                 }
                 .tc {
                     margin-bottom: 0px;
